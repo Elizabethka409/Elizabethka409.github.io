@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+/*
+	CSS Information
+	Project 1
+	CSS Document for Layout Webpages
+	Author:	Elizabeth Ka
+	
+	Filename: pp_layout.css
+*/
+
+/* Header Layout */
+.flex-header {
+	display: flex;
+	z-index: 10;
+	position: sticky;
+	flex-grow: 1;
+	top: 0;
+	justify-content: space-between;
+	width: 100%;
+	height: 60px;
+	background-color: hsla(0, 0%, 2%, 0.75);
+	padding: 0px;
+}
+
+#title {
+	position: relative;
+	float: left;
+	left: 20px;
+	text-align: center;
+}
+
+.navigation {
+	list-style-type: none;
+}
+
+.navigation li {
+	display: inline-block;
+	line-height: 20px;
+	right: 20px;
+}
+
+
+/* Banner Layout */
+
+figure#banner {
+	width: 100%;
+	height: 52rem;
+	margin: 0px;
+	background-image: url('../images/DSC_0411.JPG');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	z-index: 0;
+}
+
+
+/* Images Layout */
+
+img {
+	display: inline-flex;
+	width: 100%;
+	height: auto;
+	align-items: top;
+	text-align: center;
+	position: relative;
+}
+
+img.float-image {
+	display: float;
+	max-width: 30%;
+	height: auto;
+	float: right;
+	right: 15rem;
+}
+
+
+/* List and other text-level element Layouts */
+
+.h2-section-title {
+	display: block;
+	width: auto;
+	max-height: auto;
+	text-align: center;
+	line-height: 100px;
+	margin: 0px;
+}
+
+aside {
+	position: absolute;
+	left: 1.25rem;
+	bottom: .50rem;
+}
+
+h2, h3 {
+	text-align: center;
+}
+
+
+/* Grid Layout on Category Pages */
+
+	/* First half of regular category page */
+div.description-container {
+	width: 100%;
+	height: 500px;
+}
+
+p.description-text {
+	display: block;
+	text-align: left;
+	left: 15rem;
+	clear: none;
+	width: 35%;
+	height: 295px;
+	overflow: auto;
+}
+
+.category-summary {
+	padding: 1rem;
+}
+
+	/* Second half of a regular category page, contains grid content */
+.grid { /* aka the grid container */
+	padding: 50px;
+	height: auto;
+	background-color: hsl(0, 0%, 2%);
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto auto;
+	gap: 20px 20px;
+	justify-content: space-evenly;
+	grid-auto-rows: 200px;
+	grid-auto-flow: dense;
+}
+
+
+/* Flex Layout on Home Page */
+
+div.flex {
+	width: 100%;
+	height: 2000px;
+	padding: 0px;
+	margin: 0px;
+	
+	border: 1px rgb(72, 66, 65);
+	background-color: hsl(0, 0%, 2%);
+	display: inline-flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	justify-content: space-around;
+	align-items: center;
+}
+
+div.flex-item {
+	position: relative;
+	background-color: navy;
+	flex-basis: 500px;
+	height: auto;
+	border: 1px solid rgb(72, 66, 65);
+	margin: 5px;
+}
+
+h3.category-title {
+	position: relative;
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+/* Footer Layout aka Contact Section + Other styles */
+
+footer {
+	display: block;
+	position: static;
+	width: auto;
+	height: auto;
+	text-align: center;
+}
+
+#inline-image {
+	max-width: 10%;
+	height: auto;
+}
+
+p, address {
+	position: relative;
+	align-items: center;
+	text-align: center;
+}
+
+.page-unavailable {
+	position: absolute;
+	background-color: orange;
+	font-size: 2rem;
+	width: auto;
+	height: auto;
+}
+
+.block-of-space {
+	display: block;
+	width: auto;
+	height: 6rem;
+}
+
+/* Media Information for different screen sizes, still trying to understand it */
+
+@media only screen and (max-width: 480px) {
+}

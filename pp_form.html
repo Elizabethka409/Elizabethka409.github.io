@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	   <!--
+		WEB110-N801: 
+		Project 1: First Page of Photography Portfolio (The Form Page)
+		Author: Elizabeth Ka
+		
+		Filename: pp_form.html
+	   -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link href="../CSS/pp_styles.css" rel="stylesheet">
+		<link href="../CSS/pp_layout.css" rel="stylesheet">
+		<link href="../CSS/pp_form_styles.css" rel="stylesheet"> <!-- should take priority over pp_styles.html sheet -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Spectral+SC&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<script src=""></script>
+		<title>Feedback Form | Elizabeth's Photography</title>
+	</head>
+	<body>
+		<section id="overlay">
+			<!-- Section 2: The Feedback Form -->
+			<form id="feedback-form"
+			action="" method="POST" enctype="application/x-www-form-urlencoded">
+				<h1 id="title" class="nav-bar"><a href="pp_index.html">Elizabeth's Photography</a></h1>
+				<hr />
+				<fieldset id="survey-information">
+				  <legend><h3>Feedback Form</h3></legend>
+					<section>
+						<section id="survey-information">
+							<section class="survey-question overall">
+							  <label for="overall">On a scale from 1 to 10, how is your overall experience with using our business?</label>
+								<input type="number" name="rating" id="rating" value="" min="1" max="10">
+							</section>
+						<br /><hr id="hr" /><br />
+							<section class="survey-question website-navigation">
+							  <label for="website-navigation">How easy is it to navigate our website?</label>
+							  <input type="range" name="navigability" id="navigability" value="" min="1" max="5">
+							  <span>Awful, </span>	<span>Okay, </span>	<span>Great</span>
+							</section>
+						<br /><hr id="hr" /><br />
+							<section class="survey-formation timeliness">
+							  <label for="timeliness">Did it take you more or less time to find what you were looking for on our website?</label>
+							  <input type="radio" name="timeliness" id="more-time" value="more-time">
+							  <label for="more-time">More time</label>
+							  <input type="radio" name="timeliness" id="less-time" value="less-time">
+							  <label for="less-time">Less time</label>
+							</section>
+						<br /><hr id="hr" /><br />
+							<section class="survey-question content-comprehension">
+							  <label for="content-comprehension">How easy is it to understand the information on our website?</label>
+							  <select name="content-comprehension" id="content-comprehension">
+								<option value="not-at-all">Not at all</option>
+								<option value="somewhat-difficult">Somewhat difficult</option>
+								<option value="neutral">Neutral/Not sure</option>
+								<option value="somewhat-easy">Somewhat easy</option>
+								<option value="completely-easy">Completely easy</option>
+							  </select>
+							</section>
+						<br /><hr id="hr" /><br />
+							<section class="survey-question visual-appeal">
+							  <label for="visual-appeal">How visually appealing is our website?</label>
+							  <select name="visual-appeal" id="visual-appeal">
+								<option value="not-at-all">Not at all</option>
+								<option value="not-that-appealing">Not that appealing</option>
+								<option value="neutral">Neutral/Not sure</option>
+								<option value="somewhat-appealing">Somewhat appealing</option>
+								<option value="completely-appealing">Completely appealing</option>
+							  </select>
+							</section>
+						<br /><hr id="hr" /><br />
+							<section class="survey-question useful-feature">
+							  <label for="useful-feature">In your opinion, what is the MOST useful feature(s) of our website?</label>
+							  <br /><br />
+							  <input type="checkbox" name="feature" id="navigation-system" value="navigation-system">
+							  <label for="lettuce">Navigation System</label>
+							  <input type="checkbox" name="feature" id="accessibility" value="accessibiliy">
+							  <label for="tomato">Ease of Accessibiliy</label>
+							  <input type="checkbox" name="feature" id="layout-resizing" value="layout-resizing">
+							  <label for="onion">Layout Resizing Features</label>
+							  <input type="checkbox" name="feature" id="image-selection" value="image-selection">
+							  <label for="onion">Image Selection</label>
+							  <input type="checkbox" name="feature" id="variety-info" value="variety-info">
+							  <label for="info">Variety of Information/Sources</label>
+							  <input type="checkbox" name="feature" id="other" value="other">
+							  <label for="other">Other</label>
+							  <input type="checkbox" name="feature" id="none" value="none">
+							  <label for="none">None</label>
+							</section>
+						<br /><hr id="hr" /><br />
+							<section class="survey-question useless-feature">
+							  <label for="useless-feature">In your opinion, what is the LEAST useful feature(s) of our website?</label>
+							  <br /><br />
+							  <input type="checkbox" name="feature" id="navigation-system" value="navigation-system">
+							  <label for="lettuce">Navigation System</label>
+							  <input type="checkbox" name="feature" id="accessibility" value="accessibiliy">
+							  <label for="tomato">Ease of Accessibiliy</label>
+							  <input type="checkbox" name="feature" id="layout-resizing" value="layout-resizing">
+							  <label for="onion">Layout Resizing Features</label>
+							  <input type="checkbox" name="feature" id="image-selection" value="image-selection">
+							  <label for="onion">Image Selection</label>
+							  <input type="checkbox" name="feature" id="variety-info" value="variety-info">
+							  <label for="info">Variety of Information/Sources</label>
+							  <input type="checkbox" name="feature" id="other" value="other">
+							  <label for="other">Other</label>
+							  <input type="checkbox" name="feature" id="none" value="none">
+							  <label for="none">None</label>
+							</section>
+						<br /><hr id="hr" /><br />
+							<section class="survey-formation">
+							  <label for="wished-feature">What is a feature you wish our website had?</label>
+							  <br>
+							  <textarea id="wished-feature" name="wished-feature" rows="3" cols="130"
+							  type="text" minlength="5" maxlength="250">
+							  Enter text here
+							  </textarea>
+							</section>
+						<br /><hr id="hr" /><br />
+							<section class="survey-formation extra-info">
+							  <label for="extra">Do you have any other comments about how we can improve our website?</label>
+							  <br>
+							  <textarea id="extra" name="extra" rows="3" cols="130"
+							  type="text" minlength="15" maxlength="500">
+							  Enter text here
+							  </textarea>
+							</section>
+					</fieldset>
+					
+						<br /><br /><hr /><br /><br />
+						
+					<fieldset id="form-information">
+							<section class="metadata datetime">
+							  <label for="sauce">Date of when form was taken:</label>
+							</section>
+						<br /><hr id="hr" /><br />
+							<section class="metadata countries">
+							  <label for=countries">What country are you from?</label>
+							  <datalist id="countries" name="country">
+								<option value="U.S.A.">U.S.A.</option>
+								<option value="Canada">Canada</option>
+								<option value="Mexico">Mexico</option>
+								<option value="U.K.">U.K.</option>
+								<option value="New Zealand">New Zealand</option>
+								<option value="Australia">Australia</option>
+								<option value="Other">Other</option>  
+							  </datalist>
+							</section>
+					</section>
+				</fieldset>
+			</form>
+		  <section class="submission">
+			<input type="submit" value="Submit">
+		  </section>
+		</section>
+	</body>
+</html>

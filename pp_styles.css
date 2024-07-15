@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/*
+	CSS Information
+	Project 1
+	CSS Document for Formatting/Style Webpages
+	Author:	Elizabeth Ka
+	
+	Filename: pp_styles.css
+*/
+
+
+/* HTML and Body Styles */
+html {
+	background-color: hsl(0, 0%, 2%);
+}
+
+body {
+	color: hsl(0, 0%, 97%);
+	background-color: hsl(222, 70%, 20%);
+	margin: 0px;
+	overflow-wrap: auto;
+}
+
+
+/* General Navigation/Link Styles (Pseudo elements) */	
+
+link { /* color of the link before clicked/visited */
+	color: hsl(0, 0%, 97%);
+	background-color: rgb(72, 66, 65);
+}
+
+a { /* color of the link after visited */
+	color: hsl(0, 0%, 97%);
+}
+
+a:hover {
+	color: rgb(72, 66, 65); /* color of text when hovered over */
+}
+
+a:active { /* changes color of text to orange when it is actively being clicked */
+	color: orange;
+}
+
+
+
+/* Header Styles */
+
+#title { /* #home is the tag name of the logo/website title, "Elizabeth's Photography" */
+	font-family: 'Spectral SC', Georgia, 'Times New Roman', serif;
+	font-size: 3rem;
+	color: hsl(0, 0%, 97%);
+	letter-spacing: -6px;
+	word-spacing: 10px;
+	top: -2.5rem;
+}
+
+.nav-category {
+	font-family: 'Spectral SC', Georgia, 'Times New Roman', serif;
+}
+
+.navigation { /* for spacing between words in the navigation menu */
+	word-spacing: 3rem;
+}
+
+.nav-bar {
+	font-size: 1.5rem;
+	letter-spacing: 0.1rem;
+	color: hsl(0, 0%, 97%);
+}
+
+.nav-bar > a {
+	text-decoration: none;
+}
+
+/* Aside and/or Quote Styles */
+
+aside {
+	font-family: 'Times New Roman', serif; 
+	font-size: 2rem;
+	font-weight: bold;
+	color: hsl(0, 0%, 97%);
+	background-color: hsla(0, 0%, 0%, 0.35);
+	padding: 7px;
+}
+
+#quote > a[target="_blank"]:hover {
+	background-color: orange;
+}
+
+#quote > a {
+	text-decoration: none;
+}
+
+/* List and other text-level element Styles */
+
+title {
+	font-family: 'Georgia', Serif;
+	font-size: 2rem;
+	font-weight: light;
+	text-transform: uppercase;
+	color: hsl(0, 0%, 97%);
+	line-height: 200%;
+	
+}
+
+p, address, li { /* p is basically h4, no use for h5 or h6 [yet] */
+	font-family: Poppins, Verdana, Tahoma, Georgia, sans-serif;
+	font-size: 1rem;
+	line-height: 200%;
+	color: hsl(0, 0%, 97%);
+}
+
+h1 {
+	font-family: 'Spectral SC', 'Times New Roman', serif;
+	font-size: 3rem;
+	font-weight: normal;
+	color: hsl(0, 0%, 97%);
+}
+
+h2 {
+	font-family: Georgia, 'Times New Roman', serif;
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background-color: hsla(0, 0%, 2%, 0.5);
+}
+
+h3 {
+	font-family: 'Spectral SC', Georgia, 'Times New Roman', serif;
+	font-size: 2rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: hsl(0, 0%, 97%);
+}
+
+
+/* Flex, grid, and other class-level Styles*/
+
+/*
+.image-container {
+	background-color: white;
+}
+*/
+
+.category-title {
+	padding: 10px;
+	font-size: 2rem;
+}
+
+.grid-container {
+	background-color: hsl(0, 0%, 2%);
+}
+
+/* Footer Styles */
+
+footer {
+	font-family: Poppins, Verdana, Tahoma, sans-serif;
+	
+	color: hsl(0, 0%, 97%);
+	background-color: hsl(222, 70%, 20%);
+}
+
+hr {
+	width: 100%;
+	height: 3px;
+}
+
+#hr {
+	width: 30%;
+}

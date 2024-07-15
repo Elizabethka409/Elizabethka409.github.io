@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	   <!--
+		WEB110-N801: 
+		Project 1: First Page of Photography Portfolio (The Index Page)
+		Author: Elizabeth Ka
+		
+		Filename: pp_index.html
+	   -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Home | Elizabeth's Photography</title>
+		<link href="../CSS/pp_styles.css" rel="stylesheet">
+		<link href="../CSS/pp_layout.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Spectral+SC&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+		<!-- Section 1: Header -->
+		<header class="flex-header">
+			<h1 id="title" class="nav-bar"><a href="pp_index.html">Elizabeth's Photography</a></h1>
+			<nav>
+				<ul class="navigation"> 
+				<!-- 
+					'navigation' class to identify parent list container of the navigation list items.
+					'nav-category' class to identify all text elements present within the navigation bar.
+					'nav-bar' class to mark all child list items of the ul tag, will have separate qualities from the #title element.
+				-->
+					<li class="nav-bar nav-category"><a href="pp_index.html">Home</a></li>
+					<li class="nav-bar nav-category"><a href="pp_nature.html">Nature</a></li>
+					<li class="nav-bar nav-category"><a href="pp_event.html">Event</a></li>
+					<li class="nav-bar nav-category"><a href="pp_abstract.html">Abstract</a></li>
+					<li class="nav-bar nav-category"><a href="pp_b&w.html">B&W</a></li>
+					<li class="nav-bar nav-category"><a href="#footer">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Section 2: Banner -->
+		<!-- Displays one big picture to introduce user to the home/index page, along with a quote -->
+		<section>
+			<figure id="banner">
+			<figcaption>
+				<aside id="quote">
+				 <a href="https://en.wikiquote.org/wiki/Cesare_Pavese" target="_blank"><q>We do not remember days, we remember moments.</q> 
+				  &nbsp; &mdash; &nbsp; <cite>Cesare Pavese</cite></a>
+				</aside>
+			</figcaption>
+			</figure>
+		</section>
+		<!-- Section 3: Flex Content -->
+		<!-- Briefly introduces the 3 currently available page categories for user to go to -->
+		<section class=".title-section">
+			<h2 class="h2-section-title">Portfolio Categories</h2>
+			<p>Learn about the different types of photography through galleries organized by Elizabeth!</p>
+		</section>
+		<div class="flex">
+		<div class="flex-item">
+			<h3 class="category-title"><a href="pp_nature.html">Nature Photography</a></h3>
+			<img class="3:2" src="../images/DSC_0818.JPG" alt="Mallard duck swimming in water" />
+				<p class="category-summary">Nature Photography. One of the most common and easy accessible subjects 
+				any person wishing to capture the beauty of life has in our human reach. Although
+				not much can be fabricated in this field of photography, the circle of life and the existence of mother nature itself
+				is enough to be an eye candy subject of image to many, making it a great place to start one's photography journey.</p>
+		</div>
+			<div class="flex-item">
+				<h3 class="category-title"><a href="pp_event.html">Event Photography</a></h3>
+				<img class="3:2" src="../images/DSC_0883.JPG" alt="" />
+					<p class="category-summary">Event Photography is a professionally well-known form of photography,
+					which, as the name suggests, takes place during events. These places could be weddings, festivals,
+					conventions, and workshops. Event photography is one of the best beginner photographers jobs to try out,
+					as you get to work with real subjects (people),
+					and learn how to adjust yourself to the profession and your camera skills.
+					</p>
+			</div>
+			<div class="flex-item">
+				<h3 class="category-title"><a href="pp_abstract.html">Abstract Photography</a></h3>
+				<img class="3:2" src="../images/fullsizeoutput_2f.jpeg" alt="" />
+					<p class="category-summary">Abstract Photography is a unique area of photography which primarily
+					challenges photographers to be creative. Whether that be with their shooting techniques or in their editing software,
+					this experimental side of photography creates an endless realm of possibility to the eyes and mind -- 
+					with the ability to produce amazing, intriguing, and beautiful results -- 
+					it is whatever the artist chooses for their image to convey.
+					</p>
+			</div>			
+			<div class="flex-item">
+				<h3 class="category-title"><a href="pp_b&w.html">Black and White Photography</a></h3>
+				<img class="3:2" src="../images/20210930_130852.jpg" alt="" />
+					<p class="category-summary">Black and White Photography is a simplistic form of art.
+					Displaying the range of shades of absolute black, all the way up to absolute white, 
+					it highlights the edges and contours of any photo it pictures.
+					Black and White photography is best used to depict history, 
+					simplicity, to define one clear and distinct emotion of its subject.</p>
+			</div>			
+		</div>
+		<!-- Section 4: Footer -->
+			<!-- This is a mockup footer containing fictional information of what would usually appear in a footer. -->
+		<footer id="footer">
+			<p><a href="#top">back to top ></a></p>
+		<hr />
+				<!-- link to website's feedback #form -->
+			<div>
+				<p>Don't like what you see? Give us your <a target="_blank" href="pp_form.html">feedback</a> so we can improve our website!</p>
+			</div>
+		<br />
+			<h4>Contact Information</h4>
+		<hr id="hr"/>
+			<p>
+				eka00000@email.cpcc.edu &nbsp; <img id="inline-image" src="../images/inline_image.jpg" alt="logo of CPCC" /><br />
+				123-456-7890
+			</p>
+			<address>
+				Elizabeth's Photography<br />
+				1234 Rainbow Street<br />
+				Funtown, NC	23051
+			</address>
+		<hr />
+			<p>
+				&copy; Elizabeth's Photography 2024. All Rights Reserved.
+			</p>
+		</footer>
+	</body>
+</html>
